@@ -47,7 +47,7 @@ def print_numbers(number_list):
 
 def LoadFromFile():
     f = open('p067.txt', mode='r')
-    return [list(map(int, l.split(' '))) for l in f]
+    return [list(map(int, line.split(' '))) for line in f]
 
 
 def FindMaxPath():

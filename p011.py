@@ -17,7 +17,7 @@ table = []
 
 def LoadFromFile():
     f = open('p011.txt', mode='r')
-    return [list(map(int, l.split(' '))) for l in f]
+    return [list(map(int, line.split(' '))) for line in f]
 
 
 def comp_sequence(x, y, dx, dy, n):

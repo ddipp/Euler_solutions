@@ -9,7 +9,7 @@
 
 def SumDigitFromFile():
     f = open('p013.txt', mode='r')
-    summ = sum(int(l) for l in f)
+    summ = sum(int(line) for line in f)
     return str(summ)[0:10]
 
 

@@ -21,8 +21,8 @@ i = []
 def LoadFromFile():
     global i
     f = open('p022.txt', mode='r')
-    for l in f:
-        n = l.split(',')
+    for lis in f:
+        n = lis.split(',')
         for e in n:
             i.append(e[1:-1])
 
@@ -31,8 +31,8 @@ def word_sum(w):
     alphabet = list(string.ascii_uppercase)
     alphabet.insert(0, '')
     w_s = 0
-    for l in w:
-        w_s += alphabet.index(l)
+    for lis in w:
+        w_s += alphabet.index(lis)
     return w_s
 
 

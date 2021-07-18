@@ -28,9 +28,9 @@ def PrimeFactors(n):
     return lis
 
 
-def ListToDict(l):
-    d = {}.fromkeys(l, 0)
-    for i in l:
+def ListToDict(lis):
+    d = {}.fromkeys(lis, 0)
+    for i in lis:
         d[i] += 1
     return d
 

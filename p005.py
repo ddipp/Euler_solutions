@@ -9,8 +9,8 @@
 # ===============================================================================
 
 
-def divide_by_each(n, l):
-    for x in l:
+def divide_by_each(n, lis):
+    for x in lis:
         if n % x != 0:
             return False
     return True

@@ -30,11 +30,11 @@ def solution():
     triangle_words_count = 0
     with open('p042.txt', mode='r') as f:
         line = f.readline()
-        words = [l[1:-1] for l in line.split(',')]
+        words = [lis[1:-1] for lis in line.split(',')]
 
     # For each word in file - calc sum and check on triangle
     for index in range(len(words)):
-        word_sum = sum([alphabet.index(l) for l in words[index]])
+        word_sum = sum([alphabet.index(lis) for lis in words[index]])
         if check_triangle(word_sum):
             triangle_words_count += 1
 
